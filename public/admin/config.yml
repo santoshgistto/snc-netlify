@@ -14,9 +14,11 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: true
     files:
-      - file: "content/pages/contact.md"
+      - file: "content/pages/contact.json"
         label: "Contact Page"
         name: "contact-page"
+        extension: "json"
+        format: "json"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
@@ -52,9 +54,11 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Canonical Link, name: canonicalLink, widget: string, required: false}
               - {label: Noindex, name: noindex, widget: boolean, required: false}
 
-      - file: "content/pages/about.md"
+      - file: "content/pages/about.json"
         label: "About Page"
-        name: "about-page"
+        name: "about-page",
+        extension: "json"
+        format: "json"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Featured Image, name: featuredImage, widget: image}
